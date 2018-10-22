@@ -10,5 +10,10 @@
   <header>
     <h1>Hej</h1>
   </header>
+  <form action="register.php" method="POST">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="Register">
+  </form>
 </body>
 </html>
