@@ -30,3 +30,13 @@ $statement->execute(
 );
 // When select is used, fetch must happen
 $fetched_user = $statement->fetch();
+
+// 3. Compare
+$is_password_correct = password_verify($password, $fetched_user["password"]);
+
+if($is_password_correct){
+  // Save user globally to session
+  $_SESSION["username"] = $fetched_user["username"];
+} else {
+  // Handle errors
+}
