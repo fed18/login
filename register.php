@@ -30,3 +30,5 @@ $statement->execute(
     ":password" => $hashed_password
   ]
 );
+
+header('Location: index.php');
