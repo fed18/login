@@ -15,14 +15,18 @@ session_start();
   </header>
   <h2>Register</h2>
   <form action="register.php" method="POST">
-    <input type="text" name="username">
-    <input type="text" name="password">
+    <label for="register_username">Username</label>
+    <input type="text" name="username" id="register_username">
+    <label for="register_password">Password</label>
+    <input type="password" name="password" id="register_password">
     <input type="submit" value="Register">
   </form>
   <h2>Login</h2>
   <form action="login.php" method="POST">
-    <input type="text" name="username">
-    <input type="text" name="password">
+    <label for="login_username">Username</label>
+    <input type="text" name="username" id="login_username">
+    <label for="login_password">Password</label>
+    <input type="password" name="password" id="login_password">
     <input type="submit" value="Login">
   </form>
 </body>
