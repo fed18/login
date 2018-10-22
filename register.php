@@ -13,3 +13,18 @@ $pdo = new PDO(
   "root",
   "root"
 );
+
+// Same value in both $_POST["username"] and $username
+$username = $_POST["username"];
+$password = $_POST["password"];
+
+// No whitespace between $pdo and prepare
+$statement = $pdo->prepare("INSERT INTO users
+  (username, password) VALUES (:username, :password)");
+// Execute populates the statement and runs it
+$statement->execute(
+  [
+    ":username" => $username,
+    ":password" => $password
+  ]
+);
