@@ -17,7 +17,8 @@ $pdo = new PDO(
 // Same value in both $_POST["username"] and $username
 $username = $_POST["username"];
 $password = $_POST["password"];
-$hashed_password = password_hash($password);
+// password_hash must always have two arguments
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 // No whitespace between $pdo and prepare
 $statement = $pdo->prepare("INSERT INTO users
