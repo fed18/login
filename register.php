@@ -17,6 +17,7 @@ $pdo = new PDO(
 // Same value in both $_POST["username"] and $username
 $username = $_POST["username"];
 $password = $_POST["password"];
+$hashed_password = password_hash($password);
 
 // No whitespace between $pdo and prepare
 $statement = $pdo->prepare("INSERT INTO users
@@ -25,6 +26,6 @@ $statement = $pdo->prepare("INSERT INTO users
 $statement->execute(
   [
     ":username" => $username,
-    ":password" => $password
+    ":password" => $hashed_password
   ]
 );
