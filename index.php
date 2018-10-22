@@ -10,10 +10,17 @@
   <header>
     <h1>Hej</h1>
   </header>
+  <h2>Register</h2>
   <form action="register.php" method="POST">
     <input type="text" name="username">
     <input type="text" name="password">
     <input type="submit" value="Register">
+  </form>
+  <h2>Login</h2>
+  <form action="login.php" method="POST">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="Login">
   </form>
 </body>
 </html>
