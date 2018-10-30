@@ -14,7 +14,7 @@ session_start();
     <h1> Hej från GitHub </h1>
     <h2> Hej från Master </h2>
   </header>
-  <h2>Register</h2>
+  <h2>Register here please</h2>
   <form action="register.php" method="POST">
     <label for="register_username">Username</label>
     <input type="text" name="username" id="register_username">
