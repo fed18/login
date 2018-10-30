@@ -12,6 +12,7 @@ session_start();
 <body>
   <header>
     <h1> Hej från GitHub </h1>
+    <h2> Hej från Master </h2>
   </header>
   <h2>Register</h2>
   <form action="register.php" method="POST">
