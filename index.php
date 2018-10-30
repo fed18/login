@@ -32,3 +32,4 @@ session_start();
   </form>
 </body>
 </html>
+<?php ?>
